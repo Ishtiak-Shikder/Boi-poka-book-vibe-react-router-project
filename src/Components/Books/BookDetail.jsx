@@ -35,7 +35,7 @@ const BookDetail = () => {
       </p>
       <button className="btn btn-soft">{category}</button>
 
-      <p className='py-5'><span className='font-bold text-white'>Review :</span> {review}</p>
+      <p className='py-5'><span className='font-bold text-white'>Reviews :</span> {review}</p>
 
       <div className='flex gap-3'>
         <p><span className='font-bold text-white'>Tags : </span></p>
@@ -46,7 +46,7 @@ const BookDetail = () => {
     <div className="divider"></div>
     <div className=''>
      <p>Number Of Pages : <span className='font-bold text-white'>{totalPages}</span></p>
-    <p className='py-4'>Publisher : <span className='font-bold text-white'>{publisher}</span></p>
+    <p className='py-4'>Published By  : <span className='font-bold text-white'>{publisher}</span></p>
     <p>Year Of Publishing : <span className='font-bold text-white'>{yearOfPublishing}</span></p>
     <p className='py-4'>Rating : <span className='font-bold text-white'>{rating}</span></p>
     </div>
