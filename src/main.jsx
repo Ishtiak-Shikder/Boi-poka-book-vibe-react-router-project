@@ -3,8 +3,9 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import {
   createBrowserRouter,
+  
   RouterProvider,
-} from "react-router";
+} from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Home from './Components/Home/Home';
@@ -50,7 +51,13 @@ let router = createBrowserRouter([
   },
   
   
-]);
+],
+
+ {
+    basename: "/Boi-poka-book-vibe-react-router-project"
+  }
+
+);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
