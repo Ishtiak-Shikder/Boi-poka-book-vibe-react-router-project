@@ -4,6 +4,8 @@ import './index.css'
 import {
   createBrowserRouter,
   
+  createHashRouter,
+  
   RouterProvider,
 } from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar';
@@ -17,7 +19,7 @@ import WishListBooks from './Components/ListedBooks/WishListBooks';
 import { ToastContainer, toast } from 'react-toastify';
 
 
-let router = createBrowserRouter([
+let router = createHashRouter([
   {
     path: "/",
     element:<Root></Root>,
