@@ -52,9 +52,7 @@ let router = createHashRouter([
   
 ],
 
- {
-    basename: "/Boi-poka-book-vibe-react-router-project"
-  }
+
 
 );
 
