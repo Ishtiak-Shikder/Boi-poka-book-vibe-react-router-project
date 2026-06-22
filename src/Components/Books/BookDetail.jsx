@@ -8,7 +8,8 @@ const BookDetail = () => {
     const id = parseInt(bookId);
     const data = useLoaderData();
     // console.log(data)
-    const newData = data.find(newData=> newData.bookId === id);
+    // const newData = data.find(newData=> newData.bookId === id);
+    const newData = data && Array.isArray(data) ? data.find(item => item.bookId === id) : null;
     // console.log(newData)
     const {bookId:currentBookId,image,bookName,author,category,review,tags,yearOfPublishing,publisher,totalPages,rating} = newData;
 

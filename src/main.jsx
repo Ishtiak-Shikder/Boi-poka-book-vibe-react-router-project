@@ -28,7 +28,7 @@ let router = createBrowserRouter([
         element:<Home></Home>,
 
       },
-
+      
       {
         path:"books/:bookId",
         element:<BookDetail></BookDetail>,
