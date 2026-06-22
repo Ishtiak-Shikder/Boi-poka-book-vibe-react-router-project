@@ -32,13 +32,13 @@ let router = createHashRouter([
       {
         path:"books/:bookId",
         element:<BookDetail></BookDetail>,
-        loader: ()=> fetch('/booksData.json'),
+        loader: ()=> fetch('./booksData.json'),
       },
       {
         path:"listedBooks",
         element:<ListedBooks></ListedBooks>,
         // element:<WishListBooks></WishListBooks>,
-        loader: ()=> fetch('/booksData.json')
+        loader: ()=> fetch('./booksData.json')
       },
 
       {
