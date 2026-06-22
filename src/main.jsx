@@ -2,7 +2,7 @@ import { Children, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import {
-  createBrowserRouter ,
+  HashRouter ,
   RouterProvider,
 } from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar';
@@ -16,7 +16,7 @@ import WishListBooks from './Components/ListedBooks/WishListBooks';
 import { ToastContainer, toast } from 'react-toastify';
 
 
-let router = createBrowserRouter([
+let router = HashRouter([
   {
     path: "/",
     element:<Root></Root>,
