@@ -2,10 +2,7 @@ import { Children, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import {
-  createBrowserRouter
-  
-  ,
-  
+  createBrowserRouter ,
   RouterProvider,
 } from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar';
@@ -19,7 +16,7 @@ import WishListBooks from './Components/ListedBooks/WishListBooks';
 import { ToastContainer, toast } from 'react-toastify';
 
 
-let router = createHashRouter([
+let router = createBrowserRouter([
   {
     path: "/",
     element:<Root></Root>,
